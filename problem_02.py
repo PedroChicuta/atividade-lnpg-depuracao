@@ -1,4 +1,4 @@
-//Declaração do problema: Dada uma matriz de números inteiros, encontre a soma máxima de uma submatriz de tamanho k.
+#Declaração do problema: Dada uma matriz de números inteiros, encontre a soma máxima de uma submatriz de tamanho k.
 
 def max_subarray_sum(arr, k):
     n = len(arr)

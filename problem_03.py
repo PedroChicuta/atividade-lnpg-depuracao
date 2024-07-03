@@ -1,4 +1,4 @@
-//Declaração do problema: Dadas duas matrizes, multiplique-as e retorne a matriz resultante.
+#Declaração do problema: Dadas duas matrizes, multiplique-as e retorne a matriz resultante.
   
 def matrix_multiply(A, B):
     rows_A = len(A)
