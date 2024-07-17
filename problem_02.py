@@ -18,13 +18,17 @@ def max_subarray_sum(arr, k):
     return max_sum
 
 def read_input():
-    try:
-        arr = list(map(int, input("Enter the array elements separated by spaces: ").split()))
-        k = int(input("Enter the size of the subarray (k): "))
-        return arr, k
-    except ValueError:
-        print("Invalid input. Please enter integers only.")
-        return [], 0
+    while(True):
+        try:
+            arr = list(map(int, input("Enter the array elements separated by spaces: ").split()))
+            assert len(arr) > 0
+            k = int(input("Enter the size of the subarray (k): ")) 
+        except AssertionError:
+            print("Type a value")
+        except ValueError:
+            print("Invalid input. Please enter integers only.")
+        else:
+            return arr, k
 
 def main():
     arr, k = read_input()

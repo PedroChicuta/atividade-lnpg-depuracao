@@ -24,6 +24,9 @@ class Customer:
 
     def add_account(self, account):
         self.accounts.append(account)
+        
+        
+
 
     def get_total_balance(self):
         total_balance = 0
